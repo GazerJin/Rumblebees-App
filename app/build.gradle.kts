@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.mobdeve.s15.bautista.samantha.gamedesapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.mobdeve.s15.bautista.samantha.gamedesapp"
