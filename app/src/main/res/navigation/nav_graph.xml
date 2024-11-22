@@ -2,27 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
+    app:startDestination="@id/fragment_cards">
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/fragment_cards"
         android:name="com.mobdeve.s15.bautista.samantha.gamedesapp.CardsFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:label="Cards" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.mobdeve.s15.bautista.samantha.gamedesapp.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/fragment_board"
+        android:name="com.mobdeve.s15.bautista.samantha.gamedesapp.BoardFragment"
+        android:label="Board" />
+    <fragment
+        android:id="@+id/fragment_combat"
+        android:name="com.mobdeve.s15.bautista.samantha.gamedesapp.CombatFragment"
+        android:label="Combat"/>
+    <fragment
+        android:id="@+id/fragment_help"
+        android:name="com.mobdeve.s15.bautista.samantha.gamedesapp.HelpFragment"
+        android:label="Help"/>
 </navigation>

@@ -1,51 +1,31 @@
 package com.mobdeve.s15.bautista.samantha.gamedesapp;
 
 import android.os.Bundle;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    private NavController navController;
+    private BottomNavigationView navbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize navbar
-        BottomNavigationView navbar = findViewById(R.id.navbarBnv);
+        // Initialize NavHostFragment
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.nav_host_fragment);
+        navController = navHostFragment.getNavController();
 
-        // Set default fragment
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CardsFragment()).commit();
-        }
+        // Initialize BottomNavigationView
+        navbar = findViewById(R.id.navbarBnv);
 
-        // Set up item selection listener
-        navbar.setOnItemSelectedListener(item -> {
-            Fragment selectedFragment = null;
-/*
-            // Navigate to selected fragment
-            switch (item.getItemId()) {
-                case R.id.fragment_cards:
-                    selectedFragment = new CardsFragment();
-                    break;
-                case R.id.fragment_board:
-                    selectedFragment = new BoardFragment();
-                    break;
-                case R.id.fragment_combat:
-                    selectedFragment = new CombatFragment();
-                    break;
-                case R.id.fragment_help:
-                    selectedFragment = new HelpFragment();
-                    break;
-            }
-
-            if (selectedFragment != null) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-            }
-            */
-            return true;
-        });
-
+        // Connect BottomNavigationView to NavController
+        NavigationUI.setupWithNavController(navbar, navController);
     }
 }
+
