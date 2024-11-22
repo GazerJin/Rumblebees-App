@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Orange_Web">#FFB04A</color>
+    <color name="Orange_Peel">#FF9E1F</color>
+    <color name="Van_Dyke">#4E3D42</color>
+    <color name="Ghost_White">#F7F7FF</color>
 </resources>
