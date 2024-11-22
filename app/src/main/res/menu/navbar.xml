@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mobdeve.s15.bautista.samantha.gamedesapp.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fragment_cards"
+        android:icon="@drawable/selector_card"
+        android:title="Cards" />
+
+    <item
+        android:id="@+id/fragment_board"
+        android:icon="@drawable/selector_hive"
+        android:title="Board" />
+
+    <item
+        android:id="@+id/fragment_combat"
+        android:icon="@drawable/selector_sword"
+        android:title="Runs" />
+
+    <item
+        android:id="@+id/fragment_help"
+        android:icon="@drawable/selector_help"
+        android:title="Notifications" />
+</menu>
