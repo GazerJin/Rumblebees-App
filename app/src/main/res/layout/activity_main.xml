@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/Orange_Peel"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -12,14 +13,22 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:backgroundTint="@color/Van_Dyke"
+        android:backgroundTintMode="add"
         app:defaultNavHost="true"
+        app:layout_anchor="@+id/nav_host_fragment"
+        app:layout_anchorGravity="center"
         app:navGraph="@navigation/nav_graph" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navbarBnv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:menu="@menu/navbar"
-        app:labelVisibilityMode="labeled" />
+        android:background="@color/Van_Dyke"
+        app:itemIconTint="@drawable/nav_item_icon_tint"
+        app:itemTextColor="@drawable/nav_item_icon_tint"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navbar" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

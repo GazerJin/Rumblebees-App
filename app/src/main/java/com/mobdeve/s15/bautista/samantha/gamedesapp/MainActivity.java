@@ -1,5 +1,7 @@
 package com.mobdeve.s15.bautista.samantha.gamedesapp;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize BottomNavigationView
         navbar = findViewById(R.id.navbarBnv);
+        navbar.setItemRippleColor(ColorStateList.valueOf(Color.TRANSPARENT));
 
         // Connect BottomNavigationView to NavController
         NavigationUI.setupWithNavController(navbar, navController);
