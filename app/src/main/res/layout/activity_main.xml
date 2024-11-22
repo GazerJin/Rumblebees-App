@@ -2,11 +2,31 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardText"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/Orange_Peel"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Van_Dyke"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/search_bar"
+        />
+
+    <TextView
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:text="Cards"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:gravity="center"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
