@@ -26,7 +26,8 @@
         android:text="Cards"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:id="@+id/card_toolbar"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"

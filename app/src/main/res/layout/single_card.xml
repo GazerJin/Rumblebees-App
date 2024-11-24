@@ -8,10 +8,12 @@
     app:cardCornerRadius="15dp"
     android:padding="5dp"
     android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
     android:id="@+id/CardView">
 
     <LinearLayout
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
@@ -20,28 +22,25 @@
         <TextView
             android:id="@+id/Card_Type"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:background="@color/Pebble"
             android:gravity="center"
             android:text="Card Type"
             android:textColor="@color/white"/>
 
         <ImageView
+            android:id="@+id/Card_pic"
             android:src="@drawable/card1"
             android:scaleType="centerCrop"
-            android:id="@+id/Card_pic"
-            android:layout_width="150dp"
-            android:layout_height="180dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-
+            android:layout_width="120dp"
+            android:layout_height="140dp"
             />
 
 
         <TextView
             android:id="@+id/Card_Name"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:background="@color/Pebble"
             android:gravity="center"
             android:text="Card Type"
