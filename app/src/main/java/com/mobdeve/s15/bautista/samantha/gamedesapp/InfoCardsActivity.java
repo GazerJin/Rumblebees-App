@@ -28,7 +28,8 @@ public class InfoCardsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int imageRes = intent.getIntExtra("CARD_IMAGE", 0);
         String name = intent.getStringExtra("CARD_NAME");
-        String description = intent.getStringExtra("CARD_TYPE");
+        String type = intent.getStringExtra("CARD_TYPE");
+        String description = intent.getStringExtra("CARD_DESCRIPTION");
 
         // Populate views
         cardImage.setImageResource(imageRes);

@@ -48,6 +48,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardHolder> {
             intent.putExtra("CARD_IMAGE", card.getImage());
             intent.putExtra("CARD_NAME", card.getName());
             intent.putExtra("CARD_TYPE", card.getType());
+            intent.putExtra("CARD_DESCRIPTION", card.getDescription()); // Add description
             context.startActivity(intent);
         });
     }

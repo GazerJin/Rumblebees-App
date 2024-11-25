@@ -3,7 +3,7 @@ package com.mobdeve.s15.bautista.samantha.gamedesapp;
 public class CardModel {
 
     int image;
-    String name,type, description;
+    String name,type,description;
 
     public CardModel(int image, String name, String type, String description) {
         this.image = image;
