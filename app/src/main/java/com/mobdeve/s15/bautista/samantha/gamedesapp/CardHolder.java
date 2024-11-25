@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class CardHolder extends RecyclerView.ViewHolder {
 
     ImageView cardImage;
-    TextView cardName, cardType, cardDescription;
+    TextView cardName, cardType,carDescription;
 
     public CardHolder(@NonNull View itemView) {
         super(itemView);
