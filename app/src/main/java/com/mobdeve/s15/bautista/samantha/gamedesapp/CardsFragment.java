@@ -28,21 +28,21 @@ public class CardsFragment extends Fragment {
         cardList = new ArrayList<>();
 
         // Sample data
-        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1"));
-        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2"));
-        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3"));
-        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4"));
-        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5"));
-        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1"));
-        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2"));
-        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3"));
-        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4"));
-        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5"));
-        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1"));
-        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2"));
-        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3"));
-        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4"));
-        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5"));
+        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1", "Kill"));
+        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2", "Kill"));
+        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3", "Kill"));
+        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4", "Kill"));
+        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5", "Kill"));
+        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1", "Kill"));
+        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2", "Kill"));
+        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3", "Kill"));
+        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4", "Kill"));
+        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5", "Kill"));
+        cardList.add(new CardModel(R.drawable.card1, "Card 1", "Type 1", "Kill"));
+        cardList.add(new CardModel(R.drawable.card2, "Card 2", "Type 2", "Kill"));
+        cardList.add(new CardModel(R.drawable.card3, "Card 3", "Type 3", "Kill"));
+        cardList.add(new CardModel(R.drawable.card4, "Card 4", "Type 4", "Kill"));
+        cardList.add(new CardModel(R.drawable.card5, "Card 5", "Type 5", "Kill"));
 
 
         adapter = new CardAdapter(requireContext(), cardList);

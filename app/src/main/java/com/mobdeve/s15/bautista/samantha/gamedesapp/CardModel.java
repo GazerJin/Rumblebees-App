@@ -3,12 +3,13 @@ package com.mobdeve.s15.bautista.samantha.gamedesapp;
 public class CardModel {
 
     int image;
-    String name,type;
+    String name,type, description;
 
-    public CardModel(int image, String name, String type) {
+    public CardModel(int image, String name, String type, String description) {
         this.image = image;
         this.name = name;
         this.type = type;
+        this.description = description;
     }
 
     public int getImage() {
@@ -33,5 +34,13 @@ public class CardModel {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

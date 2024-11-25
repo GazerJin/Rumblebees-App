@@ -7,4 +7,8 @@
     <color name="Van_Dyke">#4E3D42</color>
     <color name="Ghost_White">#F7F7FF</color>
     <color name="Pebble">#897f67</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_800">#424242</color>
+    <color name="yellow_200">#FFF59D</color>
+    <color name="gray_300">#E0E0E0</color>
 </resources>

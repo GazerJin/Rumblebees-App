@@ -1,6 +1,7 @@
 package com.mobdeve.s15.bautista.samantha.gamedesapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,12 @@ public class CardAdapter extends RecyclerView.Adapter<CardHolder> {
         return new CardHolder(view);
     }
 
+
+    @Override
+    public int getItemCount() {
+        return cardList.size();
+    }
+
     @Override
     public void onBindViewHolder(@NonNull CardHolder holder, int position) {
         CardModel card = cardList.get(position);
@@ -34,10 +41,14 @@ public class CardAdapter extends RecyclerView.Adapter<CardHolder> {
         holder.cardImage.setImageResource(card.getImage());
         holder.cardName.setText(card.getName());
         holder.cardType.setText(card.getType());
-    }
 
-    @Override
-    public int getItemCount() {
-        return cardList.size();
+        // Set click listener
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, InfoCardsActivity.class);
+            intent.putExtra("CARD_IMAGE", card.getImage());
+            intent.putExtra("CARD_NAME", card.getName());
+            intent.putExtra("CARD_TYPE", card.getType());
+            context.startActivity(intent);
+        });
     }
 }
